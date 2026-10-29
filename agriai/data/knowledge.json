@@ -1,0 +1,122 @@
+[
+  {
+    "id": "wheat-cultivation",
+    "topic": "crop_cultivation",
+    "title": "Wheat cultivation in the northern plains",
+    "crops": ["wheat"],
+    "keywords": ["wheat", "rabi", "sowing", "sow", "seed", "tillering", "crown root", "irrigation schedule", "urea"],
+    "content": "Wheat is a rabi crop. In the northern plains, timely sowing is usually from late October to mid November, and yield tends to fall when sowing is delayed. It needs a cool growing period and a warm, dry spell at ripening. Wheat commonly needs four to six irrigations. The most important is the crown root initiation stage, about 20 to 25 days after sowing. Other critical stages are tillering, jointing, flowering and grain filling. Nitrogen is usually given in split doses: part at sowing and the rest with the first irrigation. Exact seed rate, variety and fertilizer amounts depend on the local area, so confirm them with the nearest Krishi Vigyan Kendra."
+  },
+  {
+    "id": "rice-paddy",
+    "topic": "crop_cultivation",
+    "title": "Rice (paddy) cultivation",
+    "crops": ["rice", "paddy"],
+    "keywords": ["rice", "paddy", "kharif", "nursery", "transplanting", "standing water", "monsoon", "blast", "planthopper"],
+    "content": "Rice is a kharif crop. Seedlings are raised in a nursery around May to June and transplanted when they are about 20 to 30 days old. After transplanting, keep a thin layer of standing water, roughly 2 to 5 cm, and avoid deep flooding. Alternate wetting and drying, where the field is allowed to dry briefly before it is watered again, can save water without cutting yield much. Drain the field about ten days before harvest. Nitrogen is best given in split doses. Common problems are blast disease, stem borer and brown planthopper, so inspect the crop regularly."
+  },
+  {
+    "id": "sugarcane",
+    "topic": "crop_cultivation",
+    "title": "Sugarcane cultivation and water needs",
+    "crops": ["sugarcane"],
+    "keywords": ["sugarcane", "cane", "planting", "earthing up", "red rot", "ratoon", "irrigation", "fertilizer"],
+    "content": "Sugarcane is usually planted in spring (February to March) or autumn (October). It is a heavy water user. As a rough guide, irrigate every 7 to 10 days in hot summer weather and every 20 to 25 days in winter, adjusting for soil type and rain. Nitrogen is given in split doses during the early growth stage. Earthing up, which means piling soil around the base of the plants, supports the stalks and helps prevent lodging. Use disease-free setts for planting, because red rot spreads through infected planting material."
+  },
+  {
+    "id": "mustard",
+    "topic": "crop_cultivation",
+    "title": "Mustard cultivation",
+    "crops": ["mustard"],
+    "keywords": ["mustard", "oilseed", "rabi", "sowing", "aphid", "irrigation", "winter"],
+    "content": "Mustard is a rabi oilseed crop, usually sown in October. It needs less water than wheat and often does well with one or two irrigations, for example at the branching and flowering stages. Avoid waterlogging. Aphids are the most common pest, mainly in the cool months from December to February, so check the flower stalks and young pods regularly."
+  },
+  {
+    "id": "potato-blight",
+    "topic": "disease",
+    "title": "Potato and tomato late blight",
+    "crops": ["potato", "tomato"],
+    "keywords": ["potato", "tomato", "late blight", "blight", "fungal", "humid", "cool", "dark spots", "fungicide"],
+    "content": "Late blight is a fungal disease that spreads fast in cool, cloudy, humid weather. It shows as dark, water-soaked patches on leaves that turn brown and may have a pale fuzzy edge underneath, and it can spread to stems and tubers. Avoid overhead irrigation, keep plants well spaced for air flow, and remove badly infected plants. Preventive fungicide sprays are sometimes needed in risky weather: use only products recommended locally and follow the label exactly."
+  },
+  {
+    "id": "tomato-leaf-curl",
+    "topic": "disease",
+    "title": "Tomato leaf curl virus",
+    "crops": ["tomato"],
+    "keywords": ["tomato", "leaf curl", "curling", "curl", "yellow", "yellowing", "virus", "viral", "whitefly", "stunted"],
+    "content": "Tomato leaf curl is a virus spread by whiteflies. Typical signs are leaves curling upward, yellowing, small crinkled leaves, stunted plants and very few fruits. There is no cure once a plant is infected. Pull out and destroy infected plants early so the virus does not spread. Control whiteflies with yellow sticky traps and neem-based sprays, grow seedlings under fine insect-proof net, and choose leaf-curl-tolerant varieties if available locally."
+  },
+  {
+    "id": "yellow-leaves",
+    "topic": "disease",
+    "title": "Why crop leaves turn yellow",
+    "crops": [],
+    "keywords": ["yellow", "yellowing", "leaves", "leaf", "chlorosis", "deficiency", "nitrogen", "iron", "zinc", "waterlogging"],
+    "content": "Yellow leaves have several possible causes. If the older, lower leaves turn evenly yellow first, the crop is often short of nitrogen. If the young top leaves turn yellow while the veins stay green, iron or zinc deficiency is likely, especially in alkaline or sandy soil. Yellowing with wilting after heavy rain or irrigation can mean waterlogged roots. Pests such as aphids and whiteflies, and diseases such as viruses and wilts, also cause yellowing. Look at which leaves are affected, check the roots and underside of leaves, and check the soil moisture before treating."
+  },
+  {
+    "id": "fungal-diseases",
+    "topic": "disease",
+    "title": "Common fungal diseases and prevention",
+    "crops": [],
+    "keywords": ["fungal", "fungus", "rust", "mildew", "powdery", "leaf spot", "blight", "rot", "wilt", "humid", "spots"],
+    "content": "Fungal diseases such as rust, powdery mildew, leaf spots and blights thrive in humid or wet conditions. Signs include coloured spots, powdery white coating, orange pustules or rotting. Prevention works better than cure: use healthy seed, rotate crops, space plants for air flow, water at the base of plants instead of over the leaves, and remove infected plant debris. If spraying is needed, use only a fungicide recommended for that crop and disease in your area and follow the label."
+  },
+  {
+    "id": "aphids-whiteflies",
+    "topic": "pest",
+    "title": "Aphids and whiteflies",
+    "crops": ["mustard", "tomato", "potato"],
+    "keywords": ["aphid", "whitefly", "sap", "honeydew", "sooty mould", "sticky", "curling", "neem", "ladybird", "insect"],
+    "content": "Aphids and whiteflies are small sap-sucking insects found mostly on the underside of leaves and on tender shoots. Signs are curled or yellowing leaves, sticky honeydew, black sooty mould and slow growth. They also spread plant viruses. Check plants often, especially in the early morning. A strong jet of water, yellow sticky traps and neem-based sprays can reduce light infestations, and ladybird beetles eat aphids, so avoid killing them. Too much nitrogen fertilizer makes plants softer and more attractive to these pests."
+  },
+  {
+    "id": "pest-management",
+    "topic": "pest",
+    "title": "Integrated pest management",
+    "crops": [],
+    "keywords": ["pest", "insect", "ipm", "integrated", "pesticide", "spray", "borer", "monitoring", "biological", "safety"],
+    "content": "Integrated pest management means using several steps instead of spraying straight away. First, monitor the field often and identify the pest correctly. Next, use cultural methods such as crop rotation, clean fields, resistant varieties and correct sowing time. Use mechanical methods like traps and hand-picking, and protect natural enemies such as ladybirds and spiders. Chemical sprays are the last option: use only recommended products at the label dose, wear protective clothing, and never spray in strong wind or when bees are active."
+  },
+  {
+    "id": "fertilizer-basics",
+    "topic": "fertilizer",
+    "title": "Nitrogen, phosphorus and potassium basics",
+    "crops": [],
+    "keywords": ["fertilizer", "fertiliser", "npk", "nitrogen", "phosphorus", "potassium", "potash", "urea", "dap", "nutrient", "manure", "compost", "soil test"],
+    "content": "Plants need three main nutrients. Nitrogen drives leafy growth, and a shortage shows as pale, yellow older leaves. Phosphorus supports roots and flowering, and a shortage can give stunted plants with purplish leaves. Potassium improves fruit quality and resistance to stress, and a shortage shows as scorched leaf edges. A soil test is the best guide to how much of each to apply. Give nitrogen in split doses so less is lost, mix in compost or farmyard manure to improve the soil, and avoid over-applying, which wastes money and can harm crops."
+  },
+  {
+    "id": "irrigation-basics",
+    "topic": "irrigation",
+    "title": "When and how to irrigate",
+    "crops": [],
+    "keywords": ["irrigation", "irrigate", "water", "watering", "drip", "sprinkler", "moisture", "frequency", "critical stage", "waterlogging", "drought"],
+    "content": "Irrigate according to the crop stage and soil moisture rather than a fixed calendar. Push a finger 5 to 10 cm into the soil: if it feels dry, the crop likely needs water. Most crops are most sensitive to water stress at flowering and grain or fruit filling. Water early in the morning or in the evening to reduce evaporation. Sandy soils need light, frequent irrigation; clay soils need less frequent but deeper irrigation. Drip and sprinkler systems save water compared with flooding the field. Avoid waterlogging, because roots need air."
+  },
+  {
+    "id": "sandy-soil",
+    "topic": "soil_practices",
+    "title": "Farming in sandy soil",
+    "crops": ["groundnut", "watermelon", "millet", "bajra", "carrot", "cowpea"],
+    "keywords": ["sandy", "sand", "soil", "light soil", "groundnut", "watermelon", "bajra", "millet", "carrot", "cowpea", "mulch", "compost", "drainage"],
+    "content": "Sandy soil drains quickly and holds little water or nutrients. Crops that usually suit it include groundnut, watermelon, pearl millet (bajra), carrot and cowpea. To improve it, add plenty of compost or farmyard manure, use mulch to reduce evaporation, irrigate lightly and often, and split fertilizer into small doses so nutrients are not washed out."
+  },
+  {
+    "id": "soil-health",
+    "topic": "soil_practices",
+    "title": "Keeping soil healthy",
+    "crops": [],
+    "keywords": ["soil", "health", "soil test", "organic matter", "crop rotation", "legume", "mulching", "stubble", "compost", "ph"],
+    "content": "Healthy soil gives better yields year after year. Test the soil every two to three years to learn its pH and nutrient levels. Rotate crops, and include legumes such as gram, pea or moong, which add nitrogen to the soil. Add compost or farmyard manure to raise organic matter, and keep the soil covered with mulch or crop residue where possible. Avoid burning stubble: it destroys organic matter and useful soil life. Avoid working very wet soil, which packs it down."
+  },
+  {
+    "id": "seasons-weather",
+    "topic": "weather_season",
+    "title": "Crop seasons and weather risks",
+    "crops": ["wheat", "rice", "maize", "cotton", "mustard", "potato", "watermelon", "gram"],
+    "keywords": ["season", "kharif", "rabi", "zaid", "weather", "monsoon", "rain", "frost", "heat", "temperature", "winter", "summer"],
+    "content": "India has three main crop seasons. Kharif (June to October) crops are sown with the monsoon: rice, maize, cotton, soybean and bajra. Rabi (October to March) crops are sown in the cool season: wheat, mustard, gram, peas and potato. Zaid (March to June) crops grow in the dry summer with irrigation: watermelon, cucumber and moong. Weather matters at key stages: a sudden heat wave during grain filling can reduce wheat yield, frost can damage potato and tomato, and heavy rain can cause waterlogging and spread fungal disease."
+  }
+]

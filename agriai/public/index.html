@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriAI – Smart advice. Better farming.</title>
+  <meta name="description" content="AgriAI is an AI-powered agricultural advisory chatbot that answers farming questions in plain conversation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ HERO + CHAT ENTRY ============ -->
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top" aria-label="AgriAI home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 29V14" />
+          <path d="M16 18c-5.5 0-8.5-3.2-9-8.5 5.5-.2 8.8 2.6 9 8.5Z" />
+          <path d="M16 14c0-5.4 3-8.8 9-9.2.3 5.6-3 9.2-9 9.2Z" />
+        </svg>
+        <span class="brand-name">AgriAI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#conversation">See an answer</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#covers">What it covers</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-body">
+      <h1 class="hero-title">What would you like to know about your crop?</h1>
+      <p class="hero-lede">Ask in your own words. AgriAI answers from an agricultural knowledge base, in plain conversation.</p>
+
+      <!-- Chat entry. Backend step: wire this form to the Node/Express endpoint -->
+      <form class="composer" id="chat-form" autocomplete="off">
+        <label class="visually-hidden" for="query">Your farming question</label>
+        <textarea id="query" name="query" rows="1" placeholder="Type your question here" required></textarea>
+        <button class="send" type="submit" aria-label="Send question">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </button>
+      </form>
+
+      <ul class="suggestions" aria-label="Example questions">
+        <li><button type="button" class="chip" data-question="Which crop suits sandy soil?">Which crop suits sandy soil?</button></li>
+        <li><button type="button" class="chip" data-question="Why are my wheat leaves turning yellow?">Why are my wheat leaves turning yellow?</button></li>
+        <li><button type="button" class="chip" data-question="How often should I irrigate paddy?">How often should I irrigate paddy?</button></li>
+        <li><button type="button" class="chip" data-question="Which fertilizer is right for sugarcane?">Which fertilizer is right for sugarcane?</button></li>
+      </ul>
+    </div>
+
+    <!-- Layered horizon, echoing the paddy-field artwork in the project deck -->
+    <div class="horizon" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="mist mist-a"></div>
+      <div class="ridge ridge-far"></div>
+      <div class="mist mist-b"></div>
+      <div class="ridge ridge-mid"></div>
+      <div class="ridge ridge-near"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ SAMPLE CONVERSATION (also the chat log structure) ============ -->
+    <section class="section conversation-section" id="conversation" aria-labelledby="conversation-title">
+      <div class="section-intro">
+        <h2 id="conversation-title">An answer, in plain words</h2>
+        <p>A farmer asks the way they would ask a neighbour. AgriAI replies with context pulled from its knowledge base.</p>
+      </div>
+
+      <!-- Backend step: new messages are appended inside #messages -->
+      <div class="conversation" id="messages" role="log" aria-live="polite">
+
+        <article class="message message-user">
+          <p>My tomato leaves are curling and turning yellow. What should I do?</p>
+        </article>
+
+        <article class="message message-bot">
+          <p>Curling with yellowing usually points to one of three things: a viral infection spread by whiteflies, uneven watering, or a nutrient shortage.</p>
+          <p>Start by checking the underside of the leaves for tiny white insects. Then look at the soil: if it stays soggy or dries out completely between waterings, steady the schedule. If the older leaves yellow first, a balanced fertilizer may help.</p>
+          <p class="message-note">This is general guidance. For a severe outbreak, please consult a local agricultural expert.</p>
+          <footer class="message-sources">
+            <span>Drawn from</span>
+            <span class="source">Crop diseases</span>
+            <span class="source">Pests</span>
+            <span class="source">Fertilizers</span>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ HOW IT ANSWERS ============ -->
+    <section class="section how-section" id="how" aria-labelledby="how-title">
+      <div class="section-intro">
+        <h2 id="how-title">Retrieval first, then the language model</h2>
+        <p>The model never searches the knowledge base itself. The backend finds the relevant context and hands it over with your question, which keeps answers grounded in agricultural information.</p>
+      </div>
+
+      <ol class="flow">
+        <li class="flow-step">
+          <h3>You ask</h3>
+          <p>A question in natural language through the web interface.</p>
+        </li>
+        <li class="flow-step">
+          <h3>The backend listens</h3>
+          <p>Node.js and Express process the query and identify the farming context.</p>
+        </li>
+        <li class="flow-step">
+          <h3>The knowledge base responds</h3>
+          <p>Relevant facts on crops, pests, diseases, fertilizers and irrigation are retrieved.</p>
+        </li>
+        <li class="flow-step">
+          <h3>The model writes the answer</h3>
+          <p>The language model turns the question and the retrieved context into a clear reply.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ WHAT IT COVERS ============ -->
+    <section class="section covers-section" id="covers" aria-labelledby="covers-title">
+      <div class="section-intro">
+        <h2 id="covers-title">Everyday questions from the field</h2>
+        <p>Advisory and informational support across the topics farmers ask about most.</p>
+      </div>
+
+      <dl class="topics">
+        <div class="topic">
+          <dt>Crop selection and cultivation</dt>
+          <dd>What to grow, and how to look after it from sowing to harvest.</dd>
+        </div>
+        <div class="topic">
+          <dt>Diseases and pests</dt>
+          <dd>Spot the signs early and learn what usually helps.</dd>
+        </div>
+        <div class="topic">
+          <dt>Fertilizer guidance</dt>
+          <dd>Which nutrients a crop needs and when to add them.</dd>
+        </div>
+        <div class="topic">
+          <dt>Irrigation</dt>
+          <dd>How much water, how often, and what changes with the season.</dd>
+        </div>
+        <div class="topic">
+          <dt>Soil and farming practices</dt>
+          <dd>Everyday habits that keep the land healthy.</dd>
+        </div>
+        <div class="topic topic-later">
+          <dt>Planned for later</dt>
+          <dd>Multilingual replies, live weather, crop photo analysis, market prices and government schemes.</dd>
+        </div>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-title">AgriAI</p>
+        <p class="footer-tagline">Smart advice. Better farming.</p>
+        <p class="footer-sdg">Contributing toward SDG 2: Zero Hunger.</p>
+      </div>
+
+      <div class="footer-credits">
+        <p>
+          A B.Tech Computer Science &amp; Engineering project by Saurabh Singh, Kishan Dubey, Arun Kumar Maurya and Sumit Dwivedi.
+        </p>
+        <p>
+          Under the supervision of Mr. Anil Kumar, Assistant Professor, Department of Computer Science &amp; Engineering, Babu Banarasi Das University, Lucknow.
+        </p>
+      </div>
+    </div>
+    <p class="footer-disclaimer">AgriAI offers advisory information only and is not a replacement for agricultural experts.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
